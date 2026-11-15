@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio PKL - Wildan Darius Permana</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0D1017;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.12) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.12) 0px, transparent 50%),
+                radial-gradient(#262D3D 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 24px 24px;
+        }
+        h1, h2, h3, .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .retro-window {
+            background-color: #161B26;
+            border: 2px solid #2E374A;
+            box-shadow: 6px 6px 0px #06080C;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+        .retro-window:hover {
+            border-color: #38BDF8;
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0px rgba(56, 189, 248, 0.25);
+        }
+        .retro-btn {
+            box-shadow: 3px 3px 0px #06080C;
+            transition: all 0.15s ease;
+        }
+        .retro-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 1px 1px 0px #06080C;
+        }
+    </style>
+</head>
+<body class="text-gray-100 min-h-screen selection:bg-sky-400 selection:text-gray-950 pb-20">
+
+    <!--
+      Foto dapat diganti dengan file berikut di folder img:
+      img/profil.jpeg, img/proyek1.jpeg, img/proyek2.jpeg, dan img/proyek3.jpeg.
+    -->
+    <nav class="sticky top-0 z-50 bg-[#0D1017]/90 backdrop-blur-md border-b border-[#2E374A]">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="font-mono text-xs text-gray-300 tracking-wide">wildan.portfolio // <span class="text-sky-400">v2.0</span></span>
+            </div>
+            <div class="hidden sm:flex items-center gap-6 text-xs font-medium text-gray-400">
+                <a href="#tentang" class="hover:text-sky-400 transition">01. Data &amp; Skill</a>
+                <a href="#proyek" class="hover:text-sky-400 transition">02. Proyek</a>
+                <a href="#kontak" class="hover:text-sky-400 transition">03. Kontak</a>
+            </div>
+            <a href="#kontak" class="bg-sky-400 hover:bg-sky-300 text-gray-950 font-bold text-xs px-3.5 py-1.5 rounded-lg retro-btn">
+                Hire Me <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 pt-8">
+        <section class="retro-window rounded-2xl overflow-hidden mb-8">
+            <div class="bg-[#1E2534] px-4 py-2.5 border-b-2 border-[#2E374A] flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-[#FF5F56] border border-black/20"></span>
+                    <span class="w-3 h-3 rounded-full bg-[#FFBD2E] border border-black/20"></span>
+                    <span class="w-3 h-3 rounded-full bg-[#27C93F] border border-black/20"></span>
+                </div>
+                <div class="bg-[#121620] px-3 py-0.5 rounded text-[11px] font-mono text-gray-400 border border-[#2E374A]">
+                    wildan-darius-permana
+                </div>
+                <span class="text-[11px] font-mono text-sky-400 hidden sm:inline">UTF-8</span>
+            </div>
+
+            <div class="p-6 md:p-10 flex flex-col md:flex-row items-center gap-8 relative">
+                <div class="relative shrink-0 group">
+                    <div class="absolute -inset-1.5 bg-gradient-to-tr from-sky-400 to-purple-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition"></div>
+                    <div class="relative w-40 h-40 md:w-44 md:h-44 rounded-2xl bg-[#121620] border-2 border-[#3A455E] overflow-hidden">
+                        <img src="img/profil.jpeg"
+                             onerror="this.src='https://placehold.co/400x400/121620/38BDF8?text=Foto+Wildan'"
+                             alt="Wildan Darius Permana"
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-3 -right-3 bg-[#1E2534] border-2 border-[#3A455E] px-2.5 py-1 rounded-lg text-[11px] font-mono text-amber-300 shadow-lg">
+                        <i class="fa-solid fa-terminal mr-1"></i> TKJ Student
+                    </div>
+                </div>
+
+                <div class="text-center md:text-left flex-1">
+                    <div class="inline-flex items-center gap-2 bg-sky-400/10 border border-sky-400/30 text-sky-300 text-xs font-mono px-3 py-1 rounded-md mb-3">
+                        <i class="fa-solid fa-bolt text-amber-300"></i> Calon Peserta PKL • IT &amp; Networking
+                    </div>
+                    <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-3 leading-tight">Wildan Darius Permana</h1>
+                    <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-6 max-w-2xl">
+                        Siswa kelas XI Teknik Komputer dan Jaringan (TKJ) SMK Negeri 4 Malang dengan ketertarikan tinggi pada administrasi jaringan kabel dan nirkabel. Siap berkontribusi secara profesional dan belajar di perusahaan selama PKL.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                        <a href="#proyek" class="bg-sky-400 hover:bg-sky-300 text-gray-950 font-bold text-xs md:text-sm px-5 py-2.5 rounded-xl retro-btn flex items-center gap-2">
+                            <i class="fa-solid fa-layer-group"></i> Eksplor Proyek
+                        </a>
+                        <a href="#kontak" class="bg-[#1E2534] hover:bg-[#273044] text-white border-2 border-[#3A455E] font-semibold text-xs md:text-sm px-5 py-2.5 rounded-xl retro-btn flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i> Hubungi Langsung
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tentang" class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
+            <div class="lg:col-span-5 retro-window rounded-2xl overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="bg-[#1E2534] px-4 py-2 border-b-2 border-[#2E374A] flex items-center justify-between">
+                        <span class="text-xs font-mono font-bold text-amber-300 flex items-center gap-2">
+                            <i class="fa-solid fa-id-badge"></i> biodata
+                        </span>
+                        <span class="w-2 h-2 rounded-full bg-amber-300"></span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-4 bg-[#121620] p-3.5 rounded-xl border border-[#2E374A] mb-4">
+                            <img src="img/profil.jpeg"
+                                 onerror="this.src='https://placehold.co/150x150/121620/FBBF24?text=WDP'"
+                                 alt="Foto ringkasan Wildan"
+                                 class="w-14 h-14 rounded-xl object-cover border-2 border-amber-300/60 shrink-0">
+                            <div>
+                                <div class="text-xs font-mono text-amber-300">ID CARD SISWA</div>
+                                <div class="font-bold text-white text-base leading-snug">Wildan Darius Permana</div>
+                                <div class="text-xs text-gray-400">Jurusan TKJ</div>
+                            </div>
+                        </div>
+                        <div class="space-y-2.5 text-xs">
+                            <div class="bg-[#121620] px-3.5 py-2.5 rounded-lg border border-[#283042] flex justify-between items-center">
+                                <span class="text-gray-400 font-mono">Sekolah</span>
+                                <span class="text-gray-100 font-semibold">SMKN 4 Malang</span>
+                            </div>
+                            <div class="bg-[#121620] px-3.5 py-2.5 rounded-lg border border-[#283042] flex justify-between items-center">
+                                <span class="text-gray-400 font-mono">Kelas</span>
+                                <span class="text-gray-100 font-semibold">XI TKJ</span>
+                            </div>
+                            <div class="bg-[#121620] px-3.5 py-2.5 rounded-lg border border-[#283042] flex justify-between items-center">
+                                <span class="text-gray-400 font-mono">Domisili</span>
+                                <span class="text-gray-100 font-semibold">Malang, Jawa Timur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#121620] px-5 py-3 border-t border-[#2E374A] flex items-center justify-between text-xs font-mono">
+                    <span class="text-gray-400">STATUS MAGANG:</span>
+                    <span class="text-emerald-400 font-bold flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span> SIAP PKL
+                    </span>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 retro-window rounded-2xl overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="bg-[#1E2534] px-4 py-2 border-b-2 border-[#2E374A] flex items-center justify-between">
+                        <span class="text-xs font-mono font-bold text-sky-400 flex items-center gap-2">
+                            <i class="fa-solid fa-microchip"></i> skills
+                        </span>
+                        <span class="text-[11px] font-mono text-gray-400">5 Core Skills</span>
+                    </div>
+                    <div class="p-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-[#121620] p-4 rounded-xl border border-[#2E374A] hover:border-sky-400/50 transition">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="w-8 h-8 rounded-lg bg-sky-400/10 text-sky-400 flex items-center justify-center"><i class="fa-solid fa-network-wired"></i></span>
+                                <span class="text-[11px] font-mono text-sky-400 bg-sky-400/10 px-2 py-0.5 rounded">Networking</span>
+                            </div>
+                            <h3 class="font-bold text-white text-sm mb-1">Networking dan Konfigurasi Dasar</h3>
+                            <p class="text-xs text-gray-400 leading-relaxed">Memahami dasar jaringan kabel dan nirkabel serta konfigurasi perangkat dan koneksi jaringan.</p>
+                        </div>
+                        <div class="bg-[#121620] p-4 rounded-xl border border-[#2E374A] hover:border-emerald-400/50 transition">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-400/10 text-emerald-400 flex items-center justify-center"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                <span class="text-[11px] font-mono text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded">Hardware</span>
+                            </div>
+                            <h3 class="font-bold text-white text-sm mb-1">Instalasi dan Maintenance Komputer</h3>
+                            <p class="text-xs text-gray-400 leading-relaxed">Melakukan instalasi sistem operasi dan perawatan dasar komputer, termasuk pembersihan komponen.</p>
+                        </div>
+                        <div class="bg-[#121620] p-4 rounded-xl border border-[#2E374A] hover:border-amber-400/50 transition">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="w-8 h-8 rounded-lg bg-amber-400/10 text-amber-300 flex items-center justify-center"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <span class="text-[11px] font-mono text-amber-300 bg-amber-400/10 px-2 py-0.5 rounded">Support</span>
+                            </div>
+                            <h3 class="font-bold text-white text-sm mb-1">Troubleshooting Komputer</h3>
+                            <p class="text-xs text-gray-400 leading-relaxed">Memeriksa gejala masalah dan membantu mencari solusi untuk kendala perangkat keras maupun sistem operasi.</p>
+                        </div>
+                        <div class="bg-[#121620] p-4 rounded-xl border border-[#2E374A] hover:border-purple-400/50 transition">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="w-8 h-8 rounded-lg bg-purple-400/10 text-purple-400 flex items-center justify-center"><i class="fa-brands fa-wordpress"></i></span>
+                                <span class="text-[11px] font-mono text-purple-400 bg-purple-400/10 px-2 py-0.5 rounded">CMS</span>
+                            </div>
+                            <h3 class="font-bold text-white text-sm mb-1">WordPress Dasar</h3>
+                            <p class="text-xs text-gray-400 leading-relaxed">Mengelola konten halaman dan mengenal penggunaan tema serta fitur dasar WordPress.</p>
+                        </div>
+                        <div class="bg-[#121620] p-4 rounded-xl border border-[#2E374A] hover:border-pink-400/50 transition sm:col-span-2">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="w-8 h-8 rounded-lg bg-pink-400/10 text-pink-400 flex items-center justify-center"><i class="fa-solid fa-code"></i></span>
+                                <span class="text-[11px] font-mono text-pink-400 bg-pink-400/10 px-2 py-0.5 rounded">Web Dev</span>
+                            </div>
+                            <h3 class="font-bold text-white text-sm mb-1">Web HTML Dasar</h3>
+                            <p class="text-xs text-gray-400 leading-relaxed">Membuat struktur halaman web sederhana menggunakan elemen HTML dasar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#121620] px-5 py-3 border-t border-[#2E374A] flex flex-wrap items-center gap-2 text-[11px] font-mono">
+                    <span class="text-gray-400 mr-1">TOOLS:</span>
+                    <span class="bg-[#1E2534] px-2 py-0.5 rounded text-gray-300">MikroTik</span>
+                    <span class="bg-[#1E2534] px-2 py-0.5 rounded text-gray-300">WinBox</span>
+                    <span class="bg-[#1E2534] px-2 py-0.5 rounded text-gray-300">VirtualBox</span>
+                    <span class="bg-[#1E2534] px-2 py-0.5 rounded text-gray-300">VS Code</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyek" class="retro-window rounded-2xl overflow-hidden mb-8">
+            <div class="bg-[#1E2534] px-4 py-2.5 border-b-2 border-[#2E374A] flex items-center justify-between">
+                <span class="text-xs font-mono font-bold text-purple-400 flex items-center gap-2">
+                    <i class="fa-solid fa-folder-open"></i> /projects/dokumentasi_praktik
+                </span>
+                <span class="text-[11px] font-mono text-gray-400">3 Items</span>
+            </div>
+            <div class="p-6">
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-white">Pengalaman Proyek &amp; Praktik</h2>
+                    <p class="text-xs text-gray-400 mt-1">Dokumentasi kegiatan praktik sekolah maupun proyek mandiri yang pernah dikerjakan.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <article class="bg-[#121620] border-2 border-[#2E374A] hover:border-sky-400 rounded-xl overflow-hidden flex flex-col justify-between transition group">
+                        <div>
+                            <div class="h-44 bg-[#0D1017] border-b-2 border-[#2E374A] overflow-hidden relative">
+                                <img src="img/proyek1.jpeg" onerror="this.src='https://placehold.co/600x400/0D1017/38BDF8?text=Foto+Proyek+1'" alt="Dokumentasi maket jaringan server-client" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                                <span class="absolute top-2.5 left-2.5 bg-[#0D1017]/90 border border-sky-400/40 text-sky-300 text-[10px] font-mono px-2.5 py-0.5 rounded">01 • MAKET</span>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-white text-base mb-2 group-hover:text-sky-400 transition">Maket Jaringan Server-Client</h3>
+                                <ol class="list-decimal list-inside space-y-1.5 text-xs text-gray-400 leading-relaxed">
+                                    <li>Merancang dan membuat maket jaringan komputer berbasis server-client.</li>
+                                    <li>Memahami komunikasi data, termasuk pengiriman data, penerimaan respons, dan interaksi server dengan client.</li>
+                                    <li>Mengenal fungsi router, switch, komputer, dan printer serta hubungan antarperangkat dalam jaringan.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="px-4 py-2.5 bg-[#161B26] border-t border-[#2E374A] flex justify-between items-center text-[11px] font-mono text-gray-400">
+                            <span>Maket</span><span class="text-sky-400">2025</span>
+                        </div>
+                    </article>
+                    <article class="bg-[#121620] border-2 border-[#2E374A] hover:border-emerald-400 rounded-xl overflow-hidden flex flex-col justify-between transition group">
+                        <div>
+                            <div class="h-44 bg-[#0D1017] border-b-2 border-[#2E374A] overflow-hidden relative">
+                                <img src="img/proyek2.jpeg" onerror="this.src='https://placehold.co/600x400/0D1017/34D399?text=Foto+Proyek+2'" alt="Dokumentasi perawatan komputer laboratorium" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                                <span class="absolute top-2.5 left-2.5 bg-[#0D1017]/90 border border-emerald-400/40 text-emerald-300 text-[10px] font-mono px-2.5 py-0.5 rounded">02 • MAINTENANCE</span>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-white text-base mb-2 group-hover:text-emerald-400 transition">Perawatan Komputer Laboratorium</h3>
+                                <ul class="list-disc list-inside space-y-1.5 text-xs text-gray-400 leading-relaxed">
+                                    <li>Melakukan pemeriksaan dan troubleshooting komputer laboratorium.</li>
+                                    <li>Membersihkan komponen dan menangani masalah perangkat keras.</li>
+                                    <li>Membantu instalasi ulang Windows serta menangani masalah sistem operasi.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="px-4 py-2.5 bg-[#161B26] border-t border-[#2E374A] flex justify-between items-center text-[11px] font-mono text-gray-400">
+                            <span>Maintenance</span><span class="text-emerald-400">2026</span>
+                        </div>
+                    </article>
+                    <article class="bg-[#121620] border-2 border-[#2E374A] hover:border-purple-400 rounded-xl overflow-hidden flex flex-col justify-between transition group">
+                        <div>
+                            <div class="h-44 bg-[#0D1017] border-b-2 border-[#2E374A] overflow-hidden relative">
+                                <img src="img/proyek3.jpeg" onerror="this.src='https://placehold.co/600x400/0D1017/C084FC?text=Foto+Proyek+3'" alt="Dokumentasi pemasangan Wi-Fi dan pengelolaan voucher internet" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                                <span class="absolute top-2.5 left-2.5 bg-[#0D1017]/90 border border-purple-400/40 text-purple-300 text-[10px] font-mono px-2.5 py-0.5 rounded">03 • MIKROTIK / WI-FI</span>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-bold text-white text-base mb-2 group-hover:text-purple-400 transition">Pemasangan Wi-Fi &amp; Voucher Internet</h3>
+                                <ol class="list-decimal list-inside space-y-1.5 text-xs text-gray-400 leading-relaxed">
+                                    <li>Menyediakan jasa pemasangan dan pengaturan jaringan Wi-Fi berbasis MikroTik.</li>
+                                    <li>Menggunakan MikroTik dan Mikhmon untuk membuat, mengelola, dan mengatur kode voucher internet.</li>
+                                    <li>Mengatur durasi penggunaan, batas kuota, dan kecepatan internet sesuai paket voucher.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="px-4 py-2.5 bg-[#161B26] border-t border-[#2E374A] flex justify-between items-center text-[11px] font-mono text-gray-400">
+                            <span>Jaringan</span><span class="text-purple-400">2026</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="retro-window rounded-2xl overflow-hidden">
+            <div class="bg-[#1E2534] px-4 py-2 border-b-2 border-[#2E374A] flex items-center justify-between">
+                <span class="text-xs font-mono font-bold text-emerald-400 flex items-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> contact
+                </span>
+                <span class="text-[11px] font-mono text-gray-400">Ready to Connect</span>
+            </div>
+            <div class="p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="text-center md:text-left">
+                    <h2 class="text-xl md:text-2xl font-bold text-white mb-1">Siap Bergabung untuk Program PKL</h2>
+                    <p class="text-xs md:text-sm text-gray-400 max-w-lg">
+                        Hubungi Wildan melalui WhatsApp, Email, atau Instagram untuk informasi lebih lanjut mengenai jadwal dan penempatan PKL.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row flex-wrap gap-3 shrink-0 w-full md:w-auto">
+                    <a href="https://wa.me/6285748381749" target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold text-xs md:text-sm px-5 py-3 rounded-xl retro-btn flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> 085748381749
+                    </a>
+                    <a href="mailto:wildaandp@gmail.com" class="bg-[#1E2534] hover:bg-[#283145] text-sky-300 border-2 border-[#3A455E] font-semibold text-xs md:text-sm px-5 py-3 rounded-xl retro-btn flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-envelope"></i> wildaandp@gmail.com
+                    </a>
+                    <a href="https://www.instagram.com/wildaandp?mdxt=cHY3dTdlbWx2MHJi" target="_blank" rel="noopener noreferrer" class="bg-[#1E2534] hover:bg-[#283145] text-pink-400 border-2 border-[#3A455E] font-semibold text-xs md:text-sm px-5 py-3 rounded-xl retro-btn flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-instagram text-lg"></i> wildaandp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-8 text-xs font-mono text-gray-500">
+            © 2026 Wildan Darius Permana • Portofolio PKL TKJ
+        </footer>
+    </main>
+</body>
+</html>
